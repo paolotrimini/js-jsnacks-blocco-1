@@ -25,7 +25,7 @@
             margin: auto;
         }
 
-        #firstDiv {
+        /*#firstDiv {
             font-weight: bold;
             text-align: center;
             font-size: 30px;
@@ -34,34 +34,57 @@
 
         #secondDiv {
             font-weight: bold;
-
             text-align: center;
             font-size: 30px;
             color: green;
-        }
+        }*/
 
 
     </style>
 </head>
 <body>
 
-<div class="container">
-    <!--<div class="row">
-        <h1 id="mainTitle">Esercizi lezione 7</h1>
-    </div>-->
+    <div class="container">
+        <div class="row">
+            <h1 id="mainTitle">Esercizi lezione 7</h1>
+        </div>
 
-    <div id="firstDiv">
-        <p>primo paragrafo</p>
-    </div>
+        <<!--div id="firstDiv">
+            <p>primo paragrafo</p>
+        </div>
 
-    <div id="secondDiv">
-        <p>secondo paragrafo</p>
+        <div id="secondDiv">
+            <p>secondo paragrafo</p>
+        </div>-->
     </div>
-</div>
 
 <!--codice javascript-->
 
 <script>
+
+    // Esercizio BONUS - Chiedere all'utente il suo cognome e inserirlo in un array non ordinato.
+    // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico
+    // e la posizione "umana" (partendo da 1) del cognome dell'utente.
+
+    // correzione con ciclo FOR
+
+    var arr = ['Rossi', 'Bianchi', 'Gialli', 'Verdi'];
+    var name = prompt('inserisci il cognome');
+
+    arr.push(name);
+    arr.sort();
+    console.log(arr);
+
+    for (var i=0; i<arr.length; i++) {
+
+        var elem = arr[i];
+
+        if (elem == name) {
+
+            console.log('posizione del cognome: ' + (i + 1));
+            break;
+        }
+    }
 
     // Esercizio 1 - Generatore di "nomi e cognomi" casuali: prendendo una
     // lista di nomi e una lista di cognomi, Gatsby vuole
@@ -140,29 +163,24 @@
     // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
     // dispari e in verde i numeri pari.
 
-    var numbers = [15, 10, 1, 5, 26];
-
-    var firstDiv = document.getElementById('firstDiv');
-    var secondDiv = document.getElementById('secondDiv');
-
-    for (var i=0; i<numbers.length; i++) {
-
-        var number = numbers[i];
-
-        if (number % 2 == 0) {
-
-            //console.log('numero pari: ', number);
-            firstDiv.innerHTML += number + ' ';
-
-        } else {
-
-            //console.log('numero dispari: ', number);
-            secondDiv.innerHTML += number + ' ';
-        }
-    }
-
-
-
+    //var numbers = [15, 10, 1, 5, 26];
+    //
+    //var firstDiv = document.getElementById('firstDiv');
+    //var secondDiv = document.getElementById('secondDiv');
+    //
+    //for (var i=0; i<numbers.length; i++) {
+    //
+    //    var number = numbers[i];
+    //
+    //    if (number % 2 == 0) {
+    //        //console.log('numero pari: ', number);
+    //        firstDiv.innerHTML += number + ' ';
+    //
+    //    } else {
+    //        //console.log('numero dispari: ', number);
+    //        secondDiv.innerHTML += number + ' ';
+    //    }
+    //}
 
 
 </script>

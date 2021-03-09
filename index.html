@@ -17,12 +17,27 @@
             width: 100vw;
             height: 100vh;
             display: flex;
-            background-color: darkgoldenrod;
+            background-color: darkorange;
             color: white;
         }
 
         .container * {
             margin: auto;
+        }
+
+        #firstDiv {
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+
+        #secondDiv {
+            font-weight: bold;
+
+            text-align: center;
+            font-size: 30px;
+            color: green;
         }
 
 
@@ -31,8 +46,16 @@
 <body>
 
 <div class="container">
-    <div class="row">
+    <!--<div class="row">
         <h1 id="mainTitle">Esercizi lezione 7</h1>
+    </div>-->
+
+    <div id="firstDiv">
+        <p>primo paragrafo</p>
+    </div>
+
+    <div id="secondDiv">
+        <p>secondo paragrafo</p>
     </div>
 </div>
 
@@ -99,17 +122,44 @@
     // Esercizio 3 - Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
     // finche' la somma non supera il valore limite e stampare i numeri in un array.
 
-    var maxValue = parseInt(prompt('inserire valore massimo: '));
+    //var maxValue = parseInt(prompt('inserire valore massimo: '));
+    //
+    //var sum = 0;
+    //var values = []; // array che conterrà numeri inseriti
+    //
+    //while (sum < maxValue) {
+    //    var value = parseInt(prompt('inserire un numero: '));
+    //    values.push(value);
+    //    sum += value;
+    //}
+    //console.log('Valore max: ' + sum, 'Numeri inseriti: ' + values);
 
-    var sum = 0;
-    var values = []; // array che conterrà numeri inseriti
 
-    while (sum < maxValue) {
-        var value = parseInt(prompt('inserire un numero: '));
-        values.push(value);
-        sum += value;
+    // Esercizio 4 - Crea due tag div con due id diversi.
+    // Un div avrà il testo colorato di rosso mentre l'altro di verde.
+    // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
+    // dispari e in verde i numeri pari.
+
+    var numbers = [15, 10, 1, 5, 26];
+
+    var firstDiv = document.getElementById('firstDiv');
+    var secondDiv = document.getElementById('secondDiv');
+
+    for (var i=0; i<numbers.length; i++) {
+
+        var number = numbers[i];
+
+        if (number % 2 == 0) {
+
+            //console.log('numero pari: ', number);
+            firstDiv.innerHTML += number + ' ';
+
+        } else {
+
+            //console.log('numero dispari: ', number);
+            secondDiv.innerHTML += number + ' ';
+        }
     }
-    console.log('Valore max: ' + sum, 'Numeri inseriti: ' + values);
 
 
 

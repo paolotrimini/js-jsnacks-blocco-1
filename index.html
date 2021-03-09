@@ -42,6 +42,27 @@
 
     // Esercizi - istruzioni condizionali, array, cicli
 
+    // Esercizio 1 - Generatore di "nomi e cognomi" casuali: prendendo una
+    // lista di nomi e una lista di cognomi, Gatsby vuole
+    // generare una falsa lista di invitati.
+
+    var names = ['Michele', 'Fabio', 'Roberto'];
+    var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+
+    var namesLng = names.length;
+    var lastnamesLng = lastnames.length;
+
+    var fullnames = []; // array da riempire con nomi e cognomi casuali
+
+    for (var i=0; i<5; i++) {
+
+        var nameRnd = names[Math.floor(Math.random() * namesLng)];
+        var lastnameRnd = lastnames[Math.floor(Math.random() * lastnamesLng)];
+
+        fullnames.push(nameRnd + ' ' + lastnameRnd);
+    }
+    console.log(fullnames);
+
 
 
 

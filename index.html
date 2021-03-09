@@ -40,28 +40,62 @@
 
 <script>
 
-    // Esercizi - istruzioni condizionali, array, cicli
-
     // Esercizio 1 - Generatore di "nomi e cognomi" casuali: prendendo una
     // lista di nomi e una lista di cognomi, Gatsby vuole
     // generare una falsa lista di invitati.
 
-    var names = ['Michele', 'Fabio', 'Roberto'];
-    var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+    //var names = ['Michele', 'Fabio', 'Roberto'];
+    //var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+    //
+    //var namesLng = names.length;
+    //var lastnamesLng = lastnames.length;
+    //
+    //var fullnames = []; // array da riempire con nomi e cognomi casuali
+    //
+    //for (var i=0; i<5; i++) {
+    //
+    //    var nameRnd = names[Math.floor(Math.random() * namesLng)];
+    //    var lastnameRnd = lastnames[Math.floor(Math.random() * lastnamesLng)];
+    //
+    //    fullnames.push(nameRnd + ' ' + lastnameRnd);
+    //}
+    //console.log(fullnames);
 
-    var namesLng = names.length;
-    var lastnamesLng = lastnames.length;
+    // Esercizio 2 - Crea due array che hanno un numero di elementi diversi.
+    // Aggiungi elementi all'array che ha meno elementi fino a
+    // quando ne avrà tanti quanti l'altro.
 
-    var fullnames = []; // array da riempire con nomi e cognomi casuali
+    var arr1 = [ 3, 22, 85, 7, 8, 56 ];
+    var arr2 = [ 18, 35 ];
 
-    for (var i=0; i<5; i++) {
+    var lng1 = arr1.length;
+    var lng2 = arr2.length;
 
-        var nameRnd = names[Math.floor(Math.random() * namesLng)];
-        var lastnameRnd = lastnames[Math.floor(Math.random() * lastnamesLng)];
+    if (lng1 == lng2) {
 
-        fullnames.push(nameRnd + ' ' + lastnameRnd);
+        console.log('stesso numero di elementi!');
+        var shortArr = arr1;
+        var longArr = arr2;
+
+    } else if (lng1 > lng2) {
+
+        var shortArr = arr2;
+        var longArr = arr1;
+
+    } else {
+
+        var shortArr = arr1;
+        var longArr = arr2;
     }
-    console.log(fullnames);
+    var missingElem = longArr.length - shortArr.length;
+
+
+    for (var i=0; i<missingElem; i++) {
+
+        var elemRnd = Math.floor(Math.random() * 100) + 1; // genero numeri random da 1 a 100
+        shortArr.push(elemRnd);
+    }
+    console.log(shortArr, longArr);
 
 
 

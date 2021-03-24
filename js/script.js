@@ -51,7 +51,12 @@ function init() {
 
 
 
-   var nuovoStudente = studente;
+    var nome = prompt('inserisci il nome: ');
+    var cognome = prompt('inserisci il cognome: ');
+    var eta = prompt('inserisci l\'eta: ');
+
+
+    //console.log(nome, cognome, eta);
 
 
 }

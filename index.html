@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Esercizi</title>
+    <script src="js/script.js" charset="utf-8"></script>
 
     <!--codice css-->
 
@@ -49,13 +51,13 @@
             <h1 id="mainTitle">Esercizi lezione 7</h1>
         </div>
 
-        <<!--div id="firstDiv">
+        <div id="firstDiv">
             <p>primo paragrafo</p>
         </div>
 
         <div id="secondDiv">
             <p>secondo paragrafo</p>
-        </div>-->
+        </div>
     </div>
 
 <!--codice javascript-->
@@ -68,7 +70,7 @@
 
     // correzione con ciclo FOR
 
-    var arr = ['Rossi', 'Bianchi', 'Gialli', 'Verdi'];
+   /* var arr = ['Rossi', 'Bianchi', 'Gialli', 'Verdi'];
     var name = prompt('inserisci il cognome');
 
     arr.push(name);
@@ -84,103 +86,103 @@
             console.log('posizione del cognome: ' + (i + 1));
             break;
         }
-    }
+    }*/
 
     // Esercizio 1 - Generatore di "nomi e cognomi" casuali: prendendo una
     // lista di nomi e una lista di cognomi, Gatsby vuole
     // generare una falsa lista di invitati.
 
-    //var names = ['Michele', 'Fabio', 'Roberto'];
-    //var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
-    //
-    //var namesLng = names.length;
-    //var lastnamesLng = lastnames.length;
-    //
-    //var fullnames = []; // array che conterrà nomi e cognomi casuali
-    //
-    //for (var i=0; i<5; i++) {
-    //
-    //    var nameRnd = names[Math.floor(Math.random() * namesLng)];
-    //    var lastnameRnd = lastnames[Math.floor(Math.random() * lastnamesLng)];
-    //
-    //    fullnames.push(nameRnd + ' ' + lastnameRnd);
-    //}
-    //console.log(fullnames);
+    /*var names = ['Michele', 'Fabio', 'Roberto'];
+    var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+
+    var namesLng = names.length;
+    var lastnamesLng = lastnames.length;
+
+    var fullnames = []; // array che conterrà nomi e cognomi casuali
+
+    for (var i=0; i<5; i++) {
+
+        var nameRnd = names[Math.floor(Math.random() * namesLng)];
+        var lastnameRnd = lastnames[Math.floor(Math.random() * lastnamesLng)];
+
+        fullnames.push(nameRnd + ' ' + lastnameRnd);
+    }
+    console.log(fullnames);*/
 
     // Esercizio 2 - Crea due array che hanno un numero di elementi diversi.
     // Aggiungi elementi all'array che ha meno elementi fino a
     // quando ne avrà tanti quanti l'altro.
 
-    //var arr1 = [ 3, 22, 85, 7, 8, 56 ];
-    //var arr2 = [ 18, 35 ];
-    //
-    //var lng1 = arr1.length;
-    //var lng2 = arr2.length;
-    //
-    //if (lng1 == lng2) {
-    //
-    //    console.log('stesso numero di elementi!');
-    //    var shortArr = arr1;
-    //    var longArr = arr2;
-    //
-    //} else if (lng1 > lng2) {
-    //
-    //    var shortArr = arr2;
-    //    var longArr = arr1;
-    //
-    //} else {
-    //
-    //    var shortArr = arr1;
-    //    var longArr = arr2;
-    //}
-    //var missingElem = longArr.length - shortArr.length;
-    //
-    //for (var i=0; i<missingElem; i++) {
-    //
-    //    var elemRnd = Math.floor(Math.random() * 100) + 1; // genero numeri random da 1 a 100
-    //    shortArr.push(elemRnd);
-    //}
-    //console.log(shortArr, longArr);
+    /*var arr1 = [ 3, 22, 85, 7, 8, 56 ];
+    var arr2 = [ 18, 35 ];
+
+    var lng1 = arr1.length;
+    var lng2 = arr2.length;
+
+    if (lng1 == lng2) {
+
+        console.log('stesso numero di elementi!');
+        var shortArr = arr1;
+        var longArr = arr2;
+
+    } else if (lng1 > lng2) {
+
+        var shortArr = arr2;
+        var longArr = arr1;
+
+    } else {
+
+        var shortArr = arr1;
+        var longArr = arr2;
+    }
+    var missingElem = longArr.length - shortArr.length;
+
+    for (var i=0; i<missingElem; i++) {
+
+        var elemRnd = Math.floor(Math.random() * 100) + 1; // genero numeri random da 1 a 100
+        shortArr.push(elemRnd);
+    }
+    console.log(shortArr, longArr);*/
 
     // Esercizio 3 - Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
     // finche' la somma non supera il valore limite e stampare i numeri in un array.
 
-    //var maxValue = parseInt(prompt('inserire valore massimo: '));
-    //
-    //var sum = 0;
-    //var values = []; // array che conterrà numeri inseriti
-    //
-    //while (sum < maxValue) {
-    //    var value = parseInt(prompt('inserire un numero: '));
-    //    values.push(value);
-    //    sum += value;
-    //}
-    //console.log('Valore max: ' + sum, 'Numeri inseriti: ' + values);
+   /* var maxValue = parseInt(prompt('inserire valore massimo: '));
 
+    var sum = 0;
+    var values = []; // array che conterrà numeri inseriti
+
+    while (sum < maxValue) {
+        var value = parseInt(prompt('inserire un numero: '));
+        values.push(value);
+        sum += value;
+    }
+    console.log('Valore max: ' + sum, 'Numeri inseriti: ' + values);
+*/
 
     // Esercizio 4 - Crea due tag div con due id diversi.
     // Un div avrà il testo colorato di rosso mentre l'altro di verde.
     // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
     // dispari e in verde i numeri pari.
 
-    //var numbers = [15, 10, 1, 5, 26];
-    //
-    //var firstDiv = document.getElementById('firstDiv');
-    //var secondDiv = document.getElementById('secondDiv');
-    //
-    //for (var i=0; i<numbers.length; i++) {
-    //
-    //    var number = numbers[i];
-    //
-    //    if (number % 2 == 0) {
-    //        //console.log('numero pari: ', number);
-    //        firstDiv.innerHTML += number + ' ';
-    //
-    //    } else {
-    //        //console.log('numero dispari: ', number);
-    //        secondDiv.innerHTML += number + ' ';
-    //    }
-    //}
+/*    var numbers = [15, 10, 1, 5, 26];
+
+    var firstDiv = document.getElementById('firstDiv');
+    var secondDiv = document.getElementById('secondDiv');
+
+    for (var i=0; i<numbers.length; i++) {
+
+        var number = numbers[i];
+
+        if (number % 2 == 0) {
+            //console.log('numero pari: ', number);
+            firstDiv.innerHTML += number + ' ';
+
+        } else {
+            //console.log('numero dispari: ', number);
+            secondDiv.innerHTML += number + ' ';
+        }
+    }*/
 
 
 </script>

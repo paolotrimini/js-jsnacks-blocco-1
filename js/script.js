@@ -8,7 +8,7 @@ function init() {
 // schermo attraverso il for in tutte le proprietà.
 
 
-    /*var studente = {
+    var studente = {
 
         'nome': 'guybrush',
         'cognome': 'threepwood',
@@ -18,7 +18,7 @@ function init() {
     for (var dati in studente) {
 
         console.log(studente[dati]);
-    }*/
+    }
 
 
 // Creare un array di oggetti di studenti. Ciclare su tutti gli
@@ -49,6 +49,9 @@ function init() {
 // aggiungere un nuovo oggetto studente inserendo
 // nell'ordine: nome, cognome e età.
 
+
+
+   var nuovoStudente = studente;
 
 
 }

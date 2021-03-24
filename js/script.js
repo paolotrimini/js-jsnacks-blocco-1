@@ -17,6 +17,9 @@ function init() {
         'eta': 30
     };
 
-    console.log(studente);
+    for (var dati in studente) {
+
+        console.log(studente[dati]);
+    }
 }
 $(document).ready(init);

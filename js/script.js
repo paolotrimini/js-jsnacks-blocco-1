@@ -17,7 +17,7 @@ function init() {
 
     for (var dati in studente) {
 
-        console.log(studente[dati]);
+        //console.log(studente[dati]);
     }
 
 
@@ -50,16 +50,17 @@ function init() {
 // nell'ordine: nome, cognome e età.
 
 
+    var nuovoStudente = [];
 
-    var nome = prompt('inserisci il nome: ');
-    var cognome = prompt('inserisci il cognome: ');
-    var eta = prompt('inserisci l\'eta: ');
+    nuovoStudente.nome = prompt('inserisci il nome: ');
+    nuovoStudente.cognome = prompt('inserisci il cognome: ');
+    nuovoStudente.eta = parseInt(prompt('inserisci l\'eta: '));
 
-
-    //console.log(nome, cognome, eta);
-
+    studenti.push(nuovoStudente);
+    console.log(studenti);
 
 }
+//JQUERY
 $(document).ready(init);
 
 

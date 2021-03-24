@@ -17,7 +17,7 @@ function init() {
 
     for (var dati in studente) {
 
-        //console.log(studente[dati]);
+        console.log(studente[dati]);
     }
 
 
@@ -50,7 +50,7 @@ function init() {
 // nell'ordine: nome, cognome e età.
 
 
-    var nuovoStudente = [];
+    var nuovoStudente = {};
 
     nuovoStudente.nome = prompt('inserisci il nome: ');
     nuovoStudente.cognome = prompt('inserisci il cognome: ');

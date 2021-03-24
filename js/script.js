@@ -8,23 +8,23 @@ function init() {
 // schermo attraverso il for in tutte le proprietà.
 
 
-    var studente = {
+    var student = {
 
         'nome': 'guybrush',
         'cognome': 'threepwood',
         'eta': 30
     };
 
-    for (var dati in studente) {
+    for (var data in student) {
 
-        console.log(studente[dati]);
+        console.log(student[data]);
     }
 
 
 // Creare un array di oggetti di studenti. Ciclare su tutti gli
 // studenti e stampare per ognuno nome e cognome.
 
-    var studenti = [{
+    var students = [{
 
             'nome': 'Paolo',
             'cognome': 'Verdi'
@@ -39,9 +39,9 @@ function init() {
         }
     ];
 
-    for (var i = 0; i < studenti.length; i++) {
-        var elencoStudenti = studenti[i];
-        console.log(elencoStudenti.nome + " " + elencoStudenti.cognome);
+    for (var i = 0; i < students.length; i++) {
+        var studentList = students[i];
+        console.log(studentList.nome + " " + studentList.cognome);
     }
 
 
@@ -50,14 +50,14 @@ function init() {
 // nell'ordine: nome, cognome e età.
 
 
-    var nuovoStudente = {};
+    var newStudent = {};
 
-    nuovoStudente.nome = prompt('inserisci il nome: ');
-    nuovoStudente.cognome = prompt('inserisci il cognome: ');
-    nuovoStudente.eta = parseInt(prompt('inserisci l\'eta: '));
+    newStudent.nome = prompt('inserisci il nome: ');
+    newStudent.cognome = prompt('inserisci il cognome: ');
+    newStudent.eta = parseInt(prompt('inserisci l\'eta: '));
 
-    studenti.push(nuovoStudente);
-    console.log(studenti);
+    students.push(newStudent);
+    console.log(students);
 
 }
 //JQUERY

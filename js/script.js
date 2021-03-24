@@ -8,8 +8,15 @@
 // nell'ordine: nome, cognome e età.
 
 function init() {
-
     //console.log('test file script.js');
 
+    var studente = {
+
+        'nome': 'guybrush',
+        'cognome': 'threepwood',
+        'eta': 30
+    };
+
+    console.log(studente);
 }
 $(document).ready(init);

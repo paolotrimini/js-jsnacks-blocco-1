@@ -89,8 +89,8 @@ function esZucchine2(){
 
     for (var i=0; i<zucchine.length; i++){
 
-        var zucchina = zucchine[i]; // singole zucchine dell'array
-        var lunghezza = zucchina['lunghezza']; // lunghezza della zucchina
+        var zucchina = zucchine[i];
+        var lunghezza = zucchina['lunghezza'];
 
         if(lunghezza > 15) {
 

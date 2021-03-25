@@ -30,7 +30,7 @@ function init() {
             'cognome': 'Verdi'
         },
         {
-            'nome': 'Marco',
+            'nome': 'Mario',
             'cognome': 'Rossi'
         },
         {
@@ -41,7 +41,7 @@ function init() {
 
     for (var i = 0; i < students.length; i++) {
         var studentList = students[i];
-        console.log(studentList.nome + " " + studentList.cognome);
+        console.log(studentList.nome + ' ' + studentList.cognome);
     }
 
 
